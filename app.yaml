@@ -1,0 +1,20 @@
+application: myuniversalplayer
+version: 20120624
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /stylesheets
+  static_dir: static/stylesheets
+- url: /images
+  static_dir: static/images
+- url: /javascripts
+  static_dir: static/javascripts
+- url: /.*
+  script: Routeur.app
+
+
+libraries:
+- name: jinja2
+  version: latest

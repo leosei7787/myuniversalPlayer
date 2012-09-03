@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- Style -->
+		<link href='stylesheets/style.css' rel='stylesheet' type='text/css'>
+
+		<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Londrina+Sketch|Doppio+One' rel='stylesheet' type='text/css'>
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/ui-lightness/jquery-ui.css" type='text/css' rel='stylesheet'>
+
+		<!-- JQuery -->
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+
+		<!-- Client -->
+		<script src="/javascripts/main.js" type="text/javascript"></script>
+		<script src="/javascripts/player.js" type="text/javascript"></script>
+		<script src="/javascripts/playergraphic.js" type="text/javascript"></script>
+		<script src="/javascripts/playlist.js" type="text/javascript"></script>
+		<script src="/javascripts/search.js" type="text/javascript"></script>
+		<script src="/javascripts/playerYoutube.js" type="text/javascript"></script>
+		<script src="/javascripts/playerDeezer.js" type="text/javascript"></script>
+
+		<!-- Players' SDK -->
+		<script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js" type="text/javascript"></script>
+		<script src="http://cdn-files.deezer.com/js/min/dz.js"></script>
+
+		<title>My Universal Player - By Leo Gonzy and Gus</title>
+
+	</head>
+	<body id='body'>
+		<div id="players">
+			<div id="player_youtube"></div>
+			<div id="player_deezer"></div>
+		</div>
+		<div id="content">
+			<div id="header">
+				<div id="controler">
+
+					<div id="cover_container"><img src="/images/1340491327_headphones.png"/>
+					</div>
+					<div id="previous" class="button"></div>
+					<div id="playpause" class="button"></div>
+					<div id="stop" class="button"></div>
+					<div id="next" class="button"></div>
+
+					<div id="progress">
+						<div id="loadedProgressBar"></div>
+						<div id="partialProgressBar"></div>
+						<div id="timeCursor"></div>
+					</div>
+					<div>
+						<div id="elpasedTime"></div>
+						<div id="song_title">
+							Play a song
+						</div>
+					</div>
+				</div>
+				<div id="title">
+					My Universal Player
+				</div>
+			</div>
+			<hr/>
+			<div id="playerBox" class="box">
+				<div id="playlist">
+					<h2>Current Playlist : </h2>
+					<div id="savePlaylist">
+						Save Playlist
+					</div>
+					<table id="playlistTracks"></table>
+				</div>
+			</div>
+			<div id="searchBox" class="box">
+				<h2>Search :</h2>
+				<label for="text">Please enter your search :</label>
+				<input type="text" id="searchQuery" value="Type here ..."/>
+				<input type="button" value="Search" id="searchButton"/>
+				<table id="searchResults"></table>
+			</div>
+			<div id="savedPlaylistsBox" class="box">
+				<div id="savedPlaylists">
+					<h2>Saved Playlists : </h2>
+					<table id="savedPlaylistsResults"></table>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div id="dz-root">
+			<div id="DZ-player"></div>
+		</div>
+	</body>
+
+</html>
