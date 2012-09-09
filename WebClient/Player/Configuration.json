@@ -1,0 +1,8 @@
+{
+  "Module" : "Player",
+  "Ressources" : [
+    {"Type":"Javascript","Link":"http://code.jquery.com/jquery-latest.js"},
+    {"Type":"Css","Link":"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/ui-lightness/jquery-ui.css"},
+    {"Type":"Html","Link":""}
+  ]
+}

@@ -1,16 +1,16 @@
 application: myuniversalplayer
-version: 20120624
+version: 20120909
 runtime: python27
 api_version: 1
 threadsafe: true
 
 handlers:
 - url: /stylesheets
-  static_dir: static/stylesheets
+  static_dir: Ressources/stylesheets
 - url: /images
-  static_dir: static/images
+  static_dir: Ressources/images
 - url: /javascripts
-  static_dir: static/javascripts
+  static_dir: Ressources/javascripts
 - url: /.*
   script: Routeur.app
 
