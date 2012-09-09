@@ -1,0 +1,8 @@
+{
+  "Module" : "Search",
+  "Ressources" : [
+    {"Type":"Javascript","Link":"/javascripts/search.js"},
+    {"Type":"Html","Source":"WebClient/Search/Search.html"}
+  ],
+  "Module":["Player","Playlist","Search"]
+}
